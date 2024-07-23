@@ -18,15 +18,69 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
-  <body oncontextmenu="return false;">
+  <body>
     <div class="main">
-      <div class="header"></div>
+      <header class="header bg-light text-black text-center py-3">
+        <h2><a href="#" class="nav-link">ON X OFF</a></h2>
+      </header>
 
-      <div class="menu"></div>
+      <nav class="menu py-2">
+        <div class="container d-flex justify-content-between">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
 
-      <div class="content"></div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-      <div class="footer"></div>
+      <main class="content py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>Main Content</h2>
+              <p>
+                Here is the main content area. You can add more content here as
+                needed.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h3>Sidebar</h3>
+              <p>
+                This is a sidebar where you can place additional information.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer bg-dark text-white text-center py-3">
+        <p>Footer Content</p>
+      </footer>
     </div>
 
     <script
