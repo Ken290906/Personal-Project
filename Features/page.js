@@ -1,7 +1,8 @@
-
 var splide = new Splide(".splide", {
-  type: "loop",
-  padding: "5rem",
+  type: "fade",
+  rewind: true,
+  autoplay: true,
+  interval: 1800,
 });
 
 splide.mount();
