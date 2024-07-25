@@ -25,6 +25,15 @@ h2 > .nav-link {
 .nav-link {
     color: #fff;
 }
+
+
+
+.splide__slide > img {
+    width: 1110px;
+    height: 500px;
+    background: no-repeat;
+    background: center;
+}
 /* ----- */
 
 /* Content */
