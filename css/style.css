@@ -18,16 +18,15 @@ h2 > .nav-link {
 /* ----- */
 
 /* Navbar */
-.menu {
-    background-color: #2d2d2d;
+.logo-img {
+    width: 100px;
+    height: 70px;
+    background: center;
+    background-size: cover;
 }
 
 .nav-link {
     color: #fff;
-}
-
-.input-search {
-    display: none;
 }
 
 /* Splide */
