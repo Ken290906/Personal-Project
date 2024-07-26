@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+    .logo-header {
+        width: 8em;
+    }
+
     .navbar-nav > .nav-link:hover {
         width: 100%;
         background-color: whitesmoke;
@@ -6,9 +10,10 @@
     }
 
     .splide__slide > img {
-        width: 300px;
-        height: 150px;
-        background: no-repeat;
-        background: center;
+        width: 100%;
+        height: auto;
+        background-size: cover; /* hoặc contain */
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }

@@ -1,0 +1,137 @@
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: sans-serif;
+  display: flex;
+  background-color: #b8b8b8;
+  width: 1000px;
+  height: 580px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 1.2rem;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 10px #0000006c;
+}
+
+.aside-left,
+.aside-right {
+  width: 500px;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+/* left */
+
+.aside-left {
+  background: rgb(255, 110, 31);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 110, 31, 1) 0%,
+    rgba(255, 50, 171, 1) 100%
+  );
+  text-align: center;
+}
+
+.element {
+  margin-top: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#section {
+  color: #fff;
+  padding: 12px 20px;
+}
+
+.btn-left {
+  background: rgb(255, 110, 31);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 110, 31, 1) 0%,
+    rgba(255, 50, 171, 1) 100%
+  );
+  text-decoration: none;
+  font-size: 15px;
+  border: none;
+  width: 120px;
+  border: 1px solid #ffffff4f;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn-left:hover {
+  box-shadow: 5px 10px 10px #00000057;
+}
+
+/* right */
+.aside-right {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.social > a {
+  color: black;
+  padding: 15px 20px;
+  font-size: 20px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.social > a:hover {
+  background: rgb(255, 110, 31);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 110, 31, 1) 0%,
+    rgba(255, 50, 171, 1) 100%
+  );
+  color: #fff;
+}
+
+input {
+  padding: 12px 15px;
+  width: 380px;
+  border: none;
+  background-color: #e9e9e9;
+}
+
+.btn-login {
+  background: rgb(255, 110, 31);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 110, 31, 1) 0%,
+    rgba(255, 50, 171, 1) 100%
+  );
+  width: 120px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn-login:hover {
+  box-shadow: 5px 10px 10px #00000057;
+}
