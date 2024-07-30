@@ -7,6 +7,9 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     min-height: 2000px;
     font-family: sans-serif;
 }
@@ -58,9 +61,21 @@ body {
 }
 
 /* Splide */
-.splide__slide > img {
+.container {
     width: 100%;
-    height: 550px;
+    overflow: hidden;
+}
+
+.splide {
+    width: 100%;
+    margin: 0;
+    padding: 0;    
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 730px;
+    display: block;
     background-size: cover; /* hoặc contain */
     background-position: center;
     background-repeat: no-repeat;
