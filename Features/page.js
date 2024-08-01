@@ -18,28 +18,29 @@ btnSignUP.addEventListener("click", function() {
 })
 
 // Data
-async function loadData() {
+async function loadData(image) {
   try {
-    const randomId = Math.random() * (51 - 23 + 1) + 23;
+    const randomId = Math.random() * 52;
     const rounderNum = Math.round(randomId);
     console.log(rounderNum);
     const response = await fetch(`https://api.escuelajs.co/api/v1/products/${rounderNum}`);
 
     if(!response.ok) {
-      throw new Error(`${response.status} ${response.statusText}`);
+      throw new Error("Can not fetch resource");
     }
 
-    const imgContent = document.querySelector("#imgClothes-content");
-    
     const data = await response.json();
     const takeImgURL = data.category.image;
 
-    imgContent.src = takeImgURL;
-    imgContent.style.display = "block";
+    image.src = takeImgURL;
+    image.style.display = "block";
     
   } catch (error) {
     console.error(error);
   }
 }
 
-loadData();
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('img[onload="loadData(this)"]');
+  images.forEach(img => loadData(img));
+});
