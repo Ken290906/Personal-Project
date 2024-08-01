@@ -82,6 +82,16 @@ body {
 }
 /* ----- */
 
+/* Clothes */
+.items-clothes {
+    width: 100%;
+}
+
+.clothes > #imgClothes-content {
+    width: 200px;
+    height: auto;
+}
+
 /* ----- */
 
 /* Content */

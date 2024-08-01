@@ -1,7 +1,5 @@
 //get Data
 
-
-
 async function fetchData() {
   try {
     const response = await fetch("https://api.escuelajs.co/api/v1/products");
@@ -10,8 +8,7 @@ async function fetchData() {
       throw new Error("Could not fetch resource");
     }
 
-    const data = await response.json();
-    console.log(data);
+    return response.json()
   } catch (error) {
     console.error(error);
   }
@@ -19,8 +16,11 @@ async function fetchData() {
 
 fetchData();
 
-// fetch("https://api.escuelajs.co/api/v1/products")
-//     .then(response => response.json())
-//     .then(data => console.log(data))
-//     .catch(error => console.error(error))
+
+
+// fetch("https://api.escuelajs.co/api/v1/categories")
+//   .then((response) => response.json())
+//   .then((data) => console.log(data))
+//   .catch((error) => console.error(error));
+
 
