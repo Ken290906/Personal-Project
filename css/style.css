@@ -87,8 +87,15 @@ body {
     width: 100%;
 }
 
-.clothes > #imgClothes-content {
-    width: 200px;
+.clothes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.clothes > .nav-link > #imgClothes-content {
+    width: 100%;
     height: auto;
 }
 
