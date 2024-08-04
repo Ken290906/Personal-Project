@@ -18,13 +18,18 @@ btnSignUP.addEventListener("click", function () {
 });
 
 // Data
-function getRandomId(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+function getRandomId(min, max, useId) {
+  let id;
+  do {
+    id = Math.floor(Math.random() * (max - min + 1)) + min;
+  } while (useId.includes(id));
+  useId.push(id);
+  return id;
 }
 
-async function loadData(image) {
+async function loadData(image, useIds) {
   try {
-    const randomId = getRandomId(13, 36);
+    const randomId = getRandomId(77, 13, useIds);
     console.log(randomId);
     const response = await fetch(
       `https://api.escuelajs.co/api/v1/products/${randomId}`
@@ -44,7 +49,8 @@ async function loadData(image) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll('img[onload="loadData(this)"]');
-  images.forEach((img) => loadData(img));
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll("#imgClothes-content"); // Thay thế '#yourImageId' bằng id thực tế của thẻ img
+  const useIds = [];
+  images.forEach((image) => loadData(image, useIds));
 });

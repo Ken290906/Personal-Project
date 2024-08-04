@@ -3,17 +3,17 @@
         width: 8em;
     }
 
-    .navbar-nav > .nav-link:hover {
-        width: 100%;
-        background-color: whitesmoke;
-        color: #000;
-    }
-
     .splide__slide > img {
         width: 100%;
         height: auto;
         background-size: cover; /* hoặc contain */
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    .clothes-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;  
     }
 }
