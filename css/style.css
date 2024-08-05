@@ -87,9 +87,37 @@ body {
     width: 100%;
 }
 
-.clothes > #imgClothes-content {
-    width: 200px;
+.clothes-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
     height: auto;
+}
+
+.clothes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #0000005b;
+    border-radius: 10%;
+    width: 350px;
+    height: 450px;
+    margin-top: 20px;
+}
+
+.nav-link > #imgClothes-content {
+    width: 350px;
+    height: auto;
+    border-radius: 10%;
+}
+
+.des-imgClothes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 /* ----- */
