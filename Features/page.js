@@ -29,7 +29,7 @@ function getRandomId(min, max, useId) {
 
 async function loadData(image, useIds) {
   try {
-    const randomId = getRandomId(77, 13, useIds);
+    const randomId = getRandomId(138, 118, useIds);
     console.log(randomId);
     const response = await fetch(
       `https://api.escuelajs.co/api/v1/products/${randomId}`
@@ -40,10 +40,18 @@ async function loadData(image, useIds) {
     }
 
     const data = await response.json();
-    const takeImgURL = data.category.image;
+    const takeImgURL = data.images[0];
+    const takeTitle = data.title;
+    const takePrice = data.price;
+
+    const parent = image.closest(".clothes");
+    const titleElement = parent.querySelector(".text-title");
+    const priceElement = parent.querySelector(".text-price");
 
     image.src = takeImgURL;
     image.style.display = "block";
+    titleElement.textContent = takeTitle;
+    priceElement.textContent = takePrice + "$";
   } catch (error) {
     console.error(error);
   }
