@@ -115,7 +115,7 @@ input {
   padding: 12px 15px;
   width: 380px;
   border: none;
-  background-color: #e9e9e9;
+  background-color: #000000;
 }
 
 .btn-login {
@@ -125,16 +125,15 @@ input {
     rgba(255, 110, 31, 1) 0%,
     rgba(255, 50, 171, 1) 100%
   );
-  width: 120px;
-  font-size: 15px;
-  text-align: center;
   text-decoration: none;
-  padding: 12px 20px;
+  font-size: 15px;
   border: none;
+  width: 120px;
+  border: 1px solid #ffffff4f;
   border-radius: 20px;
-  color: #fff;
   cursor: pointer;
   transition: 1s;
+  margin-left: 178px;
 }
 
 .btn-login:hover {

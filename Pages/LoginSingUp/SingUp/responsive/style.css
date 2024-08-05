@@ -38,6 +38,10 @@
   );
   text-align: center;
 }
+.img-welcome{
+  margin-bottom:-1%;
+  width: 20%;
+}
 
 .element {
   margin-top: 35%;
