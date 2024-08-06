@@ -18,6 +18,20 @@ btnSignUP.addEventListener("click", function () {
 });
 
 // Data
+let voucherRandom = (min, max) => {
+  let number = Math.floor(Math.random() * (max - min + 1)) + min;
+  return `${number}%`
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const vouchers = document.querySelectorAll(".voucher");
+  vouchers.forEach(vch => {
+    return vch.textContent = voucherRandom(5, 50);
+  });
+})
+
+
+
 function getRandomId(min, max, useId) {
   let id;
   do {
@@ -29,7 +43,7 @@ function getRandomId(min, max, useId) {
 
 async function loadData(image, useIds) {
   try {
-    const randomId = getRandomId(138, 118, useIds);
+    const randomId = getRandomId(52, 7, useIds);
     console.log(randomId);
     const response = await fetch(
       `https://api.escuelajs.co/api/v1/products/${randomId}`

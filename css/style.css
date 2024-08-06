@@ -98,26 +98,57 @@ body {
 .clothes {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border: 1px solid #0000005b;
+    border: 5px solid #0000005b;
     border-radius: 10%;
     width: 350px;
-    height: 450px;
+    height: 470px;
     margin-top: 20px;
+    transition: .3s;
+}
+
+.clothes:hover {
+    transform: translateY(-15px);
 }
 
 .nav-link > #imgClothes-content {
-    width: 350px;
+    width: 280px;
     height: auto;
     border-radius: 10%;
 }
 
 .des-imgClothes {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
+}
+
+.text-title {
+    width: 90%;
+}
+
+.des-imgClothes p, .text-title {
+    font-size: 18px;
+}
+
+.voucher {
+    color: red;
+    font-weight: bold;
+}
+
+.btn-product_details {
+    text-align: center;
+    width: 70%;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.btn-product_details:hover {
+    color: chartreuse;
 }
 
 /* ----- */
