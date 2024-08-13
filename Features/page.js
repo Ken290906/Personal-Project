@@ -20,17 +20,15 @@ btnSignUP.addEventListener("click", function () {
 // Data
 let voucherRandom = (min, max) => {
   let number = Math.floor(Math.random() * (max - min + 1)) + min;
-  return `${number}%`
-}
+  return `${number}%`;
+};
 
 document.addEventListener("DOMContentLoaded", () => {
   const vouchers = document.querySelectorAll(".voucher");
-  vouchers.forEach(vch => {
-    return vch.textContent = voucherRandom(5, 50);
+  vouchers.forEach((vch) => {
+    return (vch.textContent = voucherRandom(5, 50));
   });
-})
-
-
+});
 
 function getRandomId(min, max, useId) {
   let id;
@@ -65,7 +63,7 @@ async function loadData(image, useIds) {
     image.src = takeImgURL;
     image.style.display = "block";
     titleElement.textContent = takeTitle;
-    priceElement.textContent = takePrice + "$";
+    priceElement.textContent = `Price: ${takePrice}$`;
   } catch (error) {
     console.error(error);
   }
