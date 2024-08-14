@@ -29,30 +29,6 @@
     />
 
     <link
-      rel="stylesheet"
-      href="./splide-4.1.3/splide-4.1.3/dist/css/splide.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="./splide-4.1.3/splide-4.1.3/dist/css/themes/splide-default.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="./splide-4.1.3/splide-4.1.3/dist/css/themes/splide-sea-green.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="./splide-4.1.3/splide-4.1.3/dist/css/themes/splide-skyblue.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="./splide-4.1.3/splide-4.1.3/dist/css/themes/splide-default.min.css"
-    />
-    <link
       rel="shortcut icon"
       href="./image-advertisement/favincon-logo.png"
       type="image/x-icon"
@@ -138,37 +114,32 @@
         </div>
       </div>
 
-      <div class="content">
-        <div class="container">
-          <div
-            class="splide"
-            role="group"
-            aria-label="Ví dụ HTML cơ bản của Splide"
-          >
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <img src="./image-advertisement/ad-5.jpg" alt="" />
-                </li>
-                <li class="splide__slide">
-                  <img src="./image-advertisement/ad-2.jpg" alt="" />
-                </li>
-                <li class="splide__slide">
-                  <img src="./image-advertisement/ad-6.jpg" alt="" />
-                </li>
-                <li class="splide__slide">
-                  <img src="./image-advertisement/ad-4.jpg" alt="" />
-                </li>
-                <li class="splide__slide">
-                  <img src="./image-advertisement/ad-1.jpg" alt="" />
-                </li>
-                <li class="splide__slide">
-                  <img src="./image-advertisement/ad-3.jpg" alt="" />
-                </li>
-              </ul>
-            </div>
+      <div class="slideshow">
+        <div class="slideshow-container">
+
+          <div class="mySlides">
+            <img src="./image-advertisement/ad-1.jpg">
           </div>
-        </div>
+          
+          <div class="mySlides">
+            <img src="./image-advertisement/ad-2.jpg">
+          </div>
+          
+          <div class="mySlides">
+            <img src="./image-advertisement/ad-3.jpg">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
       </div>
 
       <div class="container py-5 items-clothes">
@@ -187,7 +158,9 @@
               <p class="text-price fw-bold"></p>
               <p class="voucher" onload="voucherRandom()"></p>
             </div>
-            <a href="#" class="btn-product_details nav-link bg-dark">Product details</a>
+            <a href="#" class="btn-product_details nav-link bg-dark"
+              >Product details</a
+            >
           </div>
           <div class="col-md-4 clothes">
             <a href="" class="nav-link"
@@ -202,7 +175,9 @@
               <p class="text-price fw-bold"></p>
               <p class="voucher" onload="voucherRandom()"></p>
             </div>
-            <a href="#" class="btn-product_details nav-link bg-dark">Product details</a>
+            <a href="#" class="btn-product_details nav-link bg-dark"
+              >Product details</a
+            >
           </div>
           <div class="col-md-4 clothes">
             <a href="" class="nav-link"
@@ -217,7 +192,9 @@
               <p class="text-price fw-bold"></p>
               <p class="voucher" onload="voucherRandom()"></p>
             </div>
-            <a href="#" class="btn-product_details nav-link bg-dark">Product details</a>
+            <a href="#" class="btn-product_details nav-link bg-dark"
+              >Product details</a
+            >
           </div>
           <div class="col-md-4 clothes">
             <a href="#" class="nav-link"
@@ -232,7 +209,9 @@
               <p class="text-price fw-bold"></p>
               <p class="voucher" onload="voucherRandom()"></p>
             </div>
-            <a href="#" class="btn-product_details nav-link bg-dark">Product details</a>
+            <a href="#" class="btn-product_details nav-link bg-dark"
+              >Product details</a
+            >
           </div>
           <div class="col-md-4 clothes">
             <a href="" class="nav-link"
@@ -247,7 +226,9 @@
               <p class="text-price fw-bold"></p>
               <p class="voucher" onload="voucherRandom()"></p>
             </div>
-            <a href="#" class="btn-product_details nav-link bg-dark">Product details</a>
+            <a href="#" class="btn-product_details nav-link bg-dark"
+              >Product details</a
+            >
           </div>
           <div class="col-md-4 clothes">
             <a href="" class="nav-link"
@@ -262,7 +243,9 @@
               <p class="text-price fw-bold"></p>
               <p class="voucher" onload="voucherRandom()"></p>
             </div>
-            <a href="#" class="btn-product_details nav-link bg-dark">Product details</a>
+            <a href="#" class="btn-product_details nav-link bg-dark"
+              >Product details</a
+            >
           </div>
         </div>
       </div>
@@ -279,8 +262,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
-    <script src="./splide-4.1.3/splide-4.1.3/dist/js/splide.min.js"></script>
 
     <script src="./Features/page.js"></script>
   </body>

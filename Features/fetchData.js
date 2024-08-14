@@ -19,8 +19,3 @@ fetchData();
 
 
 
-// fetch("https://api.escuelajs.co/api/v1/categories")
-//   .then((response) => response.json())
-//   .then((data) => console.log(data))
-//   .catch((error) => console.error(erro
-
