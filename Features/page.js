@@ -64,7 +64,7 @@ function getRandomId(min, max, useId) {
 
 async function loadData(image, useIds) {
   try {
-    const randomId = getRandomId(52, 7, useIds);
+    const randomId = getRandomId(47, 36, useIds);
     console.log(randomId);
     const response = await fetch(
       `https://api.escuelajs.co/api/v1/products/${randomId}`

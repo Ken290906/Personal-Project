@@ -80,6 +80,9 @@ body {
 .mySlides > img {
     width: 100%;
     height: auto;
+    background-size: cover; /* hoặc contain */
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Next & previous buttons */
